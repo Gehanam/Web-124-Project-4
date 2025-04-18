@@ -1,1 +1,43 @@
+<!DOCTYPE HTML>
+<!--Chris Stewart 10/27/2023-->
+<html lang="en" >
+<head>
+    
+    <title>Project 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="5" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="50" value="5" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+  
+    <label for="zoom">Zoom</label>
+    <input for="zoom" type="range" name="zoom" min="0" max="125"  value="5" data-sizing="%">
+    </div>
+
+    <img src="sunset.jpg" alt="sunset" width="500" height="500" style="transform: scale(var(--zoom));">
+    <img src="fullmoon.jpg" alt="comparison" width="500" height="500" style="transform: scale(var(--zoom));">
+  
+
+  <script src="project4.js"></script>
+
+    <footer>
+        &copy; Project 4: Chris Stewart
+        <a href="mailto:cstewa62@stumail.jccc.edu">cstewa62@stumail.jccc.edu</a>
+     </footer>
+
+
+
+</body>
+</html>
 
